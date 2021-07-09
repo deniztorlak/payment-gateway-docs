@@ -1,0 +1,13 @@
+CC5Response
+|__ OrderId (String)
+|__ GroupId (String)
+|__ Response (String)
+|__ AuthCode (String)
+|__ HostRefNum (String)
+|__ ProcReturnCode (String)
+|__ TransId (String)
+|__ ErrMsg (String)
++-- Extra *
+| |__ Extra1 (String)
+| |__ Extra2 (String)
+|

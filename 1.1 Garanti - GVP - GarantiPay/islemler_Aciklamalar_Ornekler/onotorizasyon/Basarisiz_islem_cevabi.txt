@@ -1,0 +1,34 @@
+<GVPSResponse>
+<Mode></Mode>
+<Terminal>
+<ProvUserID>PROVAUT</ProvUserID>
+<UserID>XXXX</UserID>
+<ID>30691297</ID>
+<MerchantID>7000679</MerchantID></Terminal>
+<Customer>
+<IPAddress>127.0.0.1</IPAddress>
+<EmailAddress>eticaret@garanti.com.tr</EmailAddress></Customer>
+<Order>
+<OrderID>GARANTI_TEST_006</OrderID>
+<GroupID></GroupID></Order>
+<Transaction>
+<Response>
+<Source>HOST</Source>
+<Code>54</Code>
+<ReasonCode>54</ReasonCode>
+<Message>Declined</Message>
+<ErrorMsg>Ýþleminizi gerçekleþtiremiyoruz.Tekrar deneyiniz</ErrorMsg>
+<SysErrMsg>SON KULLANMA TARIHI HATALI</SysErrMsg></Response>
+<RetrefNum>708315662244</RetrefNum>
+<AuthCode></AuthCode>
+<BatchNum>001684</BatchNum>
+<SequenceNum>026114</SequenceNum>
+<ProvDate>20170324 16:03:06</ProvDate>
+<CardNumberMasked>428220******2016</CardNumberMasked>
+<CardHolderName>A** 0116****** SOY*** 0116******</CardHolderName>
+<CardType>FLEXI</CardType>
+<HashData>6D67B74EECB4A8A9621D2AFB7AE8109E6939C137</HashData>
+<HostMsgList></HostMsgList>
+<RewardInqResult>
+<RewardList></RewardList>
+<ChequeList></ChequeList></RewardInqResult></Transaction></GVPSResponse>

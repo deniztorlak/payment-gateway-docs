@@ -1,0 +1,58 @@
+<HTML>
+<HEAD>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-9">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1254">
+<TITLE>Garanti Sanal POS XML İşlem Test Sayfası</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<FONT SIZE=5> XML İşlem Test Sayfası </FONT>
+<P>
+<HR ALIGN=LEFT WIDTH=100% SIZE=2>
+Aşağıdaki kod örneğini size gönderilen hesap bilgileriyle güncelleyerek XML formatında işlem gönderimini test edebilirsiniz.<br>
+(*** = hesap bilgilerinizi girmeniz gereken alan)<br>
+(xxx = kart ve ödeme bilgilerinizi girmeniz gereken alan)
+<HR ALIGN=LEFT WIDTH=100% SIZE=2>
+<br>
+<FORM ACTION="https://sanalposprovtest.garanti.com.tr/VPServlet" METHOD=POST>
+<TEXTAREA cols="80" rows="40" name="data" >
+<?xml version="1.0" encoding="UTF-8"?>
+<GVPSRequest>
+<Mode>PROD</Mode>
+<Version>v0.01</Version>
+<ChannelCode></ChannelCode>
+<Terminal>
+<ProvUserID>PROVAUT</ProvUserID>
+<HashData>91F3B8F5C76987C2C62A4DEE627FE8B77CDEFD6F</HashData>
+<UserID>DENEME</UserID>
+<ID>30691297</ID>
+<MerchantID>7000679</MerchantID></Terminal>
+<Customer>
+<IPAddress>127.0.0.1</IPAddress>
+<EmailAddress>eticaret@garanti.com.tr</EmailAddress></Customer>
+<Card>
+<Number>4282209027132016</Number>
+<ExpireDate>0518</ExpireDate>
+<CVV2>358</CVV2></Card>
+<Order>
+<OrderID>GARANTI_TEST_018</OrderID>
+<GroupID></GroupID>
+</Order>
+<Transaction>
+	<Type>identifyinq</Type>
+	<InstallmentCnt></InstallmentCnt>
+	<Amount>100</Amount>
+	<CurrencyCode>949</CurrencyCode>
+	<CardholderPresentCode>0</CardholderPresentCode>		
+	<MotoInd>N</MotoInd>
+	<Description></Description>
+	<Verification>
+     		 <Identity>51766596320</Identity>
+	</Verification>
+</Transaction></GVPSRequest>
+
+</TEXTAREA>
+<CENTER><INPUT type=submit value="Submit" >&nbsp;&nbsp;&nbsp;
+<INPUT type=reset value="Reset"></CENTER>
+</FORM>
+</BODY>
+</HTML>

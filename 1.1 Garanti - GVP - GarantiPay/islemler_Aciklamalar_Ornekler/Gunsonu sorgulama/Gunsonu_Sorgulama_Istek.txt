@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GVPSRequest>
+<Mode>PROD</Mode>
+<Version>v0.01</Version>
+<ChannelCode></ChannelCode>
+<Terminal>
+<ProvUserID>PROVAUT</ProvUserID>
+<HashData>881B6B01B3E55524AD07BDB31578B57559401714</HashData>
+<UserID>DENEME</UserID>
+<ID>30691297</ID>
+<MerchantID>7000679</MerchantID></Terminal>
+<Customer>
+<IPAddress>127.0.0.1</IPAddress>
+<EmailAddress>eticaret@garanti.com.tr</EmailAddress></Customer>
+<Card>
+<Number></Number>
+<ExpireDate></ExpireDate>
+<CVV2></CVV2></Card>
+<Order>
+<OrderID>GARANTI_TEST_011</OrderID>
+<GroupID></GroupID>
+</Order>
+<Transaction>
+
+	<Type>batchinq</Type>
+	<BatchNum>1680</BatchNum>
+	<ListPageNum>1</ListPageNum>
+
+
+<InstallmentCnt></InstallmentCnt>
+<Amount>100</Amount>
+<CurrencyCode>949</CurrencyCode>
+<CardholderPresentCode>0</CardholderPresentCode>
+<MotoInd>N</MotoInd>
+</Transaction></GVPSRequest>

@@ -1,0 +1,10 @@
+
+<CC5Request>
+<Name>TEST_NAME</Name>
+<Password>TEST_PASSWORD</Password>
+<ClientId>800100000</ClientId>
+<Mode>P</Mode>
+<OrderId>Order ID which will be cancelled</OrderId>
+<Type>Void</Type>
+<Currency>949</Currency>
+</CC5Request>

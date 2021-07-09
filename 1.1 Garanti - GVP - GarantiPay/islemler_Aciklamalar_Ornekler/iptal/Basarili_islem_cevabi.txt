@@ -1,0 +1,25 @@
+  <Transaction>
+    <Response>
+      <Source>HOST</Source>
+      <Code>00</Code>
+      <ReasonCode>00</ReasonCode>
+      <Message>Approved</Message>
+      <ErrorMsg></ErrorMsg>
+      <SysErrMsg></SysErrMsg>
+    </Response>
+    <RetrefNum>708313661992</RetrefNum>
+    <AuthCode>884511</AuthCode>
+    <BatchNum>001684</BatchNum>
+    <SequenceNum>026039</SequenceNum>
+    <ProvDate>20170324 14:25:23</ProvDate>
+    <CardNumberMasked>428220******2016</CardNumberMasked>
+    <CardHolderName></CardHolderName>
+    <CardType>FLEXI</CardType>
+    <HashData>27FC5EE71629C53BF8C5DAE5E673DD7288D52060</HashData>
+    <HostMsgList></HostMsgList>
+    <RewardInqResult>
+      <RewardList></RewardList>
+      <ChequeList></ChequeList>
+    </RewardInqResult>
+  </Transaction>
+</GVPSResponse>

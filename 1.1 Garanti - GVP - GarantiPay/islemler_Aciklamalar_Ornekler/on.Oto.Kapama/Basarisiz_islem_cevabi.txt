@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GVPSResponse>
+  <Mode></Mode>
+  <Terminal>
+    <ProvUserID>PROVAUT</ProvUserID>
+    <UserID>DENEME</UserID>
+    <ID>30691297</ID>
+    <MerchantID>7000679</MerchantID>
+  </Terminal>
+  <Customer>
+    <IPAddress>127.0.0.1</IPAddress>
+    <EmailAddress>eticaret@garanti.com.tr</EmailAddress>
+  </Customer>
+  <Order>
+    <OrderID>GARANTI_TEST_006</OrderID>
+    <GroupID></GroupID>
+  </Order>
+  <Transaction>
+    <Response>
+      <Source>GVPS</Source>
+      <Code>92</Code>
+      <ReasonCode>0205</ReasonCode>
+      <Message>Declined</Message>
+      <ErrorMsg>Kapatýlacak ön otorizasyon iþlemi bulunamadý</ErrorMsg>
+      <SysErrMsg>ErrorId: 0205</SysErrMsg>
+    </Response>
+    <RetrefNum>708315662276</RetrefNum>
+    <AuthCode></AuthCode>
+    <BatchNum>001684</BatchNum>
+    <SequenceNum>026121</SequenceNum>
+    <ProvDate>20170324 16:16:41</ProvDate>
+    <CardNumberMasked></CardNumberMasked>
+    <CardHolderName></CardHolderName>
+    <CardType></CardType>
+    <HashData>D60EFAF9852B8D6D13BE8508E4960600B64DE523</HashData>
+    <HostMsgList></HostMsgList>
+    <RewardInqResult>
+      <RewardList></RewardList>
+      <ChequeList></ChequeList>
+    </RewardInqResult>
+  </Transaction>
+</GVPSResponse>
