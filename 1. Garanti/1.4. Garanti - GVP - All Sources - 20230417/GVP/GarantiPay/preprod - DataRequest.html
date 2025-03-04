@@ -1,0 +1,97 @@
+﻿<HTML>
+<HEAD>
+<TITLE>Garanti Sanal POS XML İşlem Test Sayfası</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<FONT SIZE=5> XML İşlem Test Sayfası </FONT>
+<P>
+<HR ALIGN=LEFT WIDTH=100% SIZE=2>
+Aşağıdaki kod örneğini size gönderilen hesap bilgileriyle güncelleyerek XML formatında işlem gönderimini test edebilirsiniz.<br>
+(*** = hesap bilgilerinizi girmeniz gereken alan)<br>
+(xxx = kart ve ödeme bilgilerinizi girmeniz gereken alan)
+<HR ALIGN=LEFT WIDTH=100% SIZE=2>
+<br>
+<FORM ACTION="https://sanalposprovtest.garanti.com.tr/VPServlet" METHOD=POST>
+<TEXTAREA cols="80" rows="40" name="data" >
+<?xml version="1.0" encoding="UTF-8"?>
+<GVPSRequest>
+	<Mode>PROD</Mode>
+	<Version>v0.01</Version>
+	<ChannelCode></ChannelCode>
+	<Terminal>
+		<ProvUserID>PROVAUT</ProvUserID>
+		<HashData>90A510988F4440459902CEEDD408A397716CF68A</HashData>
+		<UserID>GARANTIPAY</UserID>
+		<ID>30690133</ID>
+		<MerchantID>3424113</MerchantID>
+	</Terminal>
+	<Customer>
+		<IPAddress>127.0.0.1</IPAddress>
+		<EmailAddress>eticaret@garanti.com.tr</EmailAddress>
+	</Customer>
+	<Card>
+		<Number></Number>
+		<ExpireDate></ExpireDate>
+		<CVV2></CVV2>
+	</Card>
+	<Order>
+		<OrderID></OrderID>
+		<GroupID></GroupID>
+		<AddressList>
+			<Address>
+			<Type>S</Type>
+			<Name>İŞÇÖÜĞıçöşğü</Name>
+			<LastName>SOYADI</LastName>
+			<Company></Company>
+			<Text>MEBUSEVLERİ MAH.ŞEREFLİ SOKAK BORA APT.16/6</Text>
+			<District></District>
+			<City></City>
+			<PostalCode></PostalCode>
+			<Country></Country>
+			<PhoneNumber></PhoneNumber>
+			</Address>
+		</AddressList>
+	</Order>
+	<Transaction>
+		<Type>gpdatarequest</Type>
+		<SubType>sales</SubType>
+		<InstallmentCnt></InstallmentCnt>
+		<Amount>100</Amount>
+		<CurrencyCode>949</CurrencyCode>
+		<CardholderPresentCode>0</CardholderPresentCode>
+		<MotoInd>N</MotoInd>
+		<GarantiPaY>
+			<bnsuseflag>Y</bnsuseflag>    
+			<fbbuseflag>N</fbbuseflag >   
+			<chequeuseflag>N</chequeuseflag> 
+			<mileuseflag>N</mileuseflag >  
+			<CompanyName>Ozgur and Associates</CompanyName>
+			<InstallmentOnlyForCommercialCard>N</InstallmentOnlyForCommercialCard>
+			<ReturnUrl></ReturnUrl>
+			<TCKN>13775068052</TCKN>
+			<GSMNumber>5358862332</GSMNumber>
+			<TotalInstallmentCount>2</TotalInstallmentCount>
+			<AddCampaingInstallment></AddCampaingInstallment>
+			<TxnTimeOutPeriod>300</TxnTimeOutPeriod>
+			<NotifSendInd>N</NotifSendInd>
+			<GPInstallments>
+				<Installment>
+					<Installmentnumber>1</Installmentnumber>
+					<Installmentamount>2234</Installmentamount>
+					<Installmentratewithreward>0</Installmentratewithreward>
+				</Installment>
+				<Installment>
+					<Installmentnumber>2</Installmentnumber>
+					<Installmentamount>1522</Installmentamount>
+					<Installmentratewithreward>0</Installmentratewithreward>
+				</Installment>
+			</GPInstallments>
+		</GarantiPaY>
+	</Transaction>
+</GVPSRequest>
+</TEXTAREA>
+<CENTER><INPUT type=submit value="Submit" >&nbsp;&nbsp;&nbsp;
+<INPUT type=reset value="Reset"></CENTER>
+</FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,3 @@
+BODY_METADATA; OrderId; Pan; Expiry; TransactionType; Amount; Currency
+B;
+B;

@@ -1,4 +1,0 @@
-Posnet XML Servis Örnekleri
-
-Bu klasörün alt klasörlerinde Posnet XML Servis örneklerinin
-kodlarý bulunmaktadýr.
