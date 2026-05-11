@@ -1,3 +1,0 @@
-"01", "05", "12", "16", "51", "54", "57", "58", "61", "91", "96", "92", "99" hata kodlarýyla sonuçlanan tekrarlar 
-için günlük çalýþan bir batchle denemeler gerçekleþecek, bu hata kodlarý dýþýndaki 
-tekrarlý iþlemler için normal akýþ devam ediyor olacak.
