@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* Her sayfada aynı olan Global CSS Bilgileri (Header + Global Settings) */
+body {
+	background-repeat: repeat-x;
+	background-position: center top;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+img {border:none;}
+h1, h2, h3, h4, h5, h6, form, label {
+	margin:0px;
+	padding:0px;
+}
+
+a{outline:0;}
+
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+.hideMe {display:none;}
+#Header, #Footer  {
+	display:block;
+	clear:both;
+}
+#Header {
+	height: 79px;
+}
+
+.BodyContainer {
+	background-repeat: repeat-x;
+	background-position: center top;
+	height: 100%;
+	width: 100%;
+}
+#Container {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 760px;
+	height: 450px;
+	position: relative;
+}
+#Header #right_container {
+	position: relative;
+	width: 253px;
+	height: 79px;
+}
+
+h1 {
+	display: block;
+	height: 77px;
+	width: 210px;
+	text-indent: -9999px;
+	background-image: url(/_images/back_logo.gif);
+}
+h1 a {
+	display: block;
+	height: 77px;
+	width: 210px;
+	background-image: none;
+}
+h1 a:hover {
+	background-image: url(/_images/back_logo_homelink.gif);
+	background-position:10px 10px;
+}
+h1 a.en:hover {
+	background-image: url(/_images/back_logo_homelink_en.gif);
+	background-position:10px 10px;
+}
+
+#right_container #language_section,
+#right_container #language_section_en {
+	position: absolute;
+	width: 60px;
+	top: 0px;
+	right: 5px;
+	font-size: 9px;
+}
+#right_container #language_section a {
+	background-image: url(/_images/english_button.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	text-indent: -9999px;
+	height: 16px;
+	width: 60px;
+}
+#right_container #language_section_en a {
+	background-image: url(/_images/turkce_button.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	display: block;
+	text-indent: -9999px;
+	height: 16px;
+	width: 60px;
+}
+
+#right_container #language_section a:hover,
+#right_container #language_section_en a:hover {
+	background-position: left bottom;
+}
+
+.sssTable {border:4px solid #ebf1f6; padding:0; margin:10px 0 0 0;}
+
+#searchArea {
+	background-image: url(/_images/back_arama-box.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	top:0px;
+	width: 178px;
+	left: 7px;
+}
+#searchAreaSub {
+	background-image: url(/_images/back_arama-box.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	top:0px;
+	width: 178px;
+	right: 10px;
+}
+
+#searchArea #site_search {
+	height: 24px;
+	float:right;
+}
+
+#site_search .left {
+	background-image: url(/_images/search_lefticon.gif);
+	height:18px;
+	width:22px;
+	display:block;
+	float:left;
+}
+#site_search #search_input, .search-box #search_input {
+	width: 105px;
+	float: left;
+	height: 17px;
+	background-image: url(/_images/search_inputback.gif);
+	font-size: 9px;
+	line-height: 16px;
+	color: #232323;
+	border: 0px none;
+	padding: 2px 0pt 0pt;
+	display:block;
+}
+#site_search .right {
+	background-image: url(/_images/search_right.gif);
+	height: 18px;
+	width: 5px;
+	float: left;
+	display:block;
+}
+#site_search .search-box {
+	width: 170px;
+	margin-top: 2px;
+	margin-left: 8px;
+}
+#site_search #search_submit {
+	margin-left: 5px;
+}
+
+#search_results_search_input {
+	background-color:#FFFFFF;
+	border: 1px solid #CCCCCC;
+	z-index: 200;
+	margin:0; 
+	padding:0;
+	width:130px;
+	list-style-type:none;
+	display:inline;
+}
+#search_results_search_input li { display:inline; margin:0; padding:0; }
+#search_results_search_input a {
+	font-size: 10px;
+	line-height: 14px;
+	padding: 3px;
+	display: block;
+	color: #878787;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C0C0C0;
+}
+#search_results_search_input a:hover, #search_results_search_input a.active {
+	background-color: #EBFDFF;
+	color: #004A8D;
+}
+#onlinebankCover {
+	height: 30px;
+	width: 235px;
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	background-image: url(/_images/internetSubeCover.gif);
+	background-repeat: no-repeat;
+}
+
+#onlinebankCover_en {
+	height: 30px;
+	width: 235px;
+	position: absolute;
+	left: 10px;
+	top: 30px;
+	background-image: url(/_images/internetSubeCover_en.gif);
+	background-repeat: no-repeat;
+}
+
+
+#onlinebankArea ul li{
+    /*behavior:url("/_css/csshover.htc"); */
+}
+#onlinebankArea {
+	position: absolute;
+	top: 30px;
+	width: 235px;
+	left: 10px;
+	height: 45px;
+}
+
+
+ul#ob_nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 11px;
+}
+
+
+
+ul#ob_nav li {
+	padding: 0;
+	margin: 0;
+	display: block;
+	float: left;
+	height:40px;
+	text-indent: -9999px;
+}
+
+ul#ob_nav li a {
+	border: 0;
+	display: block;
+	height: 28px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+ul#ob_nav li a:hover {
+	border: 0;
+	display: block;
+}
+
+ul#ob_nav li ul {	
+	/*visibility: hidden;*/
+	position: absolute;
+	top: 28px;
+	left: 0px;
+	width: 78px;
+	padding: 0;
+	margin: 0;
+}
+
+ul#ob_nav li:hover ul, ul#ob_nav li.CSStoHighlight ul {
+	display:block;
+	/*visibility: visible;*/
+	z-index: 100;
+}
+
+
+ul#ob_nav li#ob_bireysel ul,
+ul#ob_nav li#ob_bireysel_en ul {
+	background: none;
+	margin-left: 0px;
+}
+ul#ob_nav li#ob_kurumsal ul,
+ul#ob_nav li#ob_kurumsal_en ul {
+	background: none;
+	margin-left: 79px;
+}
+ul#ob_nav li#ob_worldonline ul,
+ul#ob_nav li#ob_worldonline_en ul {
+	background: none;
+	margin-left: 156px;
+}
+
+ul#ob_nav li#ob_bireysel ul a,
+ul#ob_nav li#ob_kurumsal ul a,
+ul#ob_nav li#ob_worldonline ul a  {
+	background-image: url(/_images/hemenuyeol.gif);
+	background-position: left -1;
+	height: 20px;
+}
+
+ul#ob_nav li#ob_bireysel_en ul a,
+ul#ob_nav li#ob_kurumsal_en ul a,
+ul#ob_nav li#ob_worldonline_en ul a  {
+	background-image: url(/_images/hemenuyeol_en.gif);
+	background-position: left -1;
+	height: 20px;
+}
+
+
+ul#ob_nav li ul li a:hover {
+	background-position: left top;
+}
+
+
+ul#ob_nav li#ob_bireysel a {
+	background-image:url(/_images/internetSube_bireysel.gif);
+	width: 79px;
+}
+
+ul#ob_nav li#ob_bireysel_en a {
+	background-image:url(/_images/internetSube_bireysel_en.gif);
+	width: 79px;
+}
+
+ul#ob_nav li#ob_kurumsal a {
+	background-image:url(/_images/internetSube_kurumsal.gif);
+	width: 77px;
+}
+
+ul#ob_nav li#ob_kurumsal_en a {
+	background-image:url(/_images/internetSube_kurumsal_en.gif);
+	width: 77px;
+}
+
+ul#ob_nav li#ob_worldonline a {
+	background-image:url(/_images/internetSube_worldonline.gif);
+	width: 79px;
+}
+
+ul#ob_nav li#ob_worldonline_en a {
+	background-image:url(/_images/internetSube_worldonline_en.gif);
+	width: 79px;
+}
+
+ul#ob_nav li#ob_bireysel a:hover,
+ul#ob_nav li#ob_bireysel_en a:hover,
+ul#ob_nav li#ob_kurumsal a:hover,
+ul#ob_nav li#ob_kurumsal_en a:hover,
+ul#ob_nav li#ob_worldonline a:hover,
+ul#ob_nav li#ob_worldonline_en a:hover {
+	background-position: left bottom;
+}
+
+tr.odd {
+	background-color: #F4F4F4;
+}
+.globalSelect {font-size:11px; border:1px solid #EAEAEA; padding:3px; width:120px;}

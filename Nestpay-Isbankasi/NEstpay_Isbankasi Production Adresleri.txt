@@ -1,0 +1,9 @@
+3D Secure URL Adresi: https://sanalpos.isbank.com.tr/fim/est3Dgate
+
+Api Server  URL Adresi:  https://sanalpos.isbank.com.tr/fim/api
+
+veya
+
+3D Secure URL Adresi: https://spos.isbank.com.tr/fim/est3Dgate
+
+Api Server  URL Adresi:  https://spos.isbank.com.tr/fim/api
