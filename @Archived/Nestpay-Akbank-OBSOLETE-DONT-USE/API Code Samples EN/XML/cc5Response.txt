@@ -1,0 +1,12 @@
+
+<CC5Response>
+    <OrderId>00265733</OrderId>
+    <GroupId>00265733</GroupId>
+    <Response>Declined</Response>
+    <AuthCode></AuthCode>
+    <HostRefNum></HostRefNum>
+    <ProcReturnCode>05</ProcReturnCode>
+    <TransId>3f99061f-1701-3000-0002-0003ba16ddc0</TransId>
+    <ErrMsg>Decline</ErrMsg>
+    <Extra></Extra>
+</CC5Response>

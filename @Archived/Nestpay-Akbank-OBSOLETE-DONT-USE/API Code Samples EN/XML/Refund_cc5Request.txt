@@ -1,0 +1,11 @@
+
+<CC5Request>
+<Name>TEST_NAME</Name>
+<Password>TEST_PASSWORD</Password>
+<ClientId>800100000</ClientId>
+<Mode>P</Mode>
+<OrderId>Order ID which will be refunded</OrderId>
+<Type>Credit</Type>
+<Total>Amount should be sent if it will be partical refund</Total>
+<Currency>949</Currency>
+</CC5Request>

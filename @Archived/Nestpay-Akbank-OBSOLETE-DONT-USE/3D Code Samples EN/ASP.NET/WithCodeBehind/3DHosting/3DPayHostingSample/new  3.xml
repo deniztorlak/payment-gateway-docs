@@ -1,0 +1,17 @@
+
+<CC5Response>
+	<OrderId>ORDER-13212OACB10043</OrderId>
+	<GroupId>ORDER-13212OACB10043</GroupId>
+	<Response>Approved</Response>
+	<AuthCode>633472</AuthCode>
+	<HostRefNum>321214000174</HostRefNum>
+	<ProcReturnCode>00</ProcReturnCode>
+	<TransId>13212OAlF10048</TransId>
+	<ErrMsg/>
+	<Extra>
+		<SETTLEID>1</SETTLEID>
+		<TRXDATE>20130731 14:00:37</TRXDATE>
+		<ERRORCODE/>
+		<NUMCODE>00</NUMCODE>
+	</Extra>
+</CC5Response>

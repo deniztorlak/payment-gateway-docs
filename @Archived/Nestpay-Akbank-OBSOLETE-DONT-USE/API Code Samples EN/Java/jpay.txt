@@ -1,0 +1,228 @@
+
+                  JPAY ver 2.18
+
+Installation:
+
+
+JDK 1.3 or above version must be installed.
+
+Copy jpay.jar file to classpath.
+
+
+
+How to use:
+
+
+ By using "set functions" to do transactions, set the required parameters.
+
+ Call processTransaction function and execute.
+
+ Get the results with "Get functions".
+
+
+
+public int processTransaction(String host, int port, String path)
+
+host: "TEST_URL"
+port: "443"
+path: "/servlet/cc5ApiServer"
+
+
+
+Set Functions:
+
+
+setName(String value)
+Name 		Merchant's User name
+
+setPassword(String value)
+Password 	Merchant's Password
+
+setClientId(String value)
+Clientid 	Merchant's ID
+
+setMode(String value)
+Mode 	If it is "P", it will be prod transaction. If it is "T", it will be test transaction.
+
+setType(String value)
+ChargeType	It can be; Auth, PreAuth, PostAuth, Credit, Void.
+
+
+setNumber(String value)
+cardnumber	Credit Card's Number
+
+setExpires(String value)
+Credit Card's Expire Date (Has to be mm/yy)
+
+setCvv2Val(String value)
+cv2 		CVV or CVC2
+
+
+setTotal(String value)
+Total 		Transaction Amount
+
+setCurrency(String value)
+currency 	Currency (949 for TL)
+
+
+
+Optional Parameters:
+
+
+setTaksit(String Value)
+
+Taksit		Installment amount
+
+
+setOrderId(String value)
+Oid		Order ID has to be unique. If it would be sent as empty, it will be created by system.
+
+setGroupId(String value)
+groupid		If this area would be empty, it will be same with Oid.
+
+setTransId(String value)
+transid		Transaction ID is created by the system.
+
+setIPAddress(String value)
+ip		Customer's IP who has ordered.
+
+setUserId(String value)
+userid		Customer's ID who has ordered.
+
+setBName(String value)
+Bname		Customer’s name on bill.
+
+setBStreet1(String value)
+Baddr1  	Customer’s billing address 1.
+
+setBStreet2(String value)
+Baddr2		Customer’s billing address 2.
+
+setBStreet3(String value)
+Baddr3		Customer’s billing address 3.
+
+setBCity(String value)
+Bcity		Customer’s city on bill.
+
+setBPostalCode(String value)
+Bzip    	Customer’s zip code on bill.
+
+setBStateProv(String value)
+Bstate  	Customer’s state on bill.
+
+setSName(String value)
+Sname   	Customer’s shipping name.
+
+setSStreet1(String value)
+Saddr1 	 	Customer’s shipping address 1.
+
+setSStreet2(String value)
+Saddr2 		Customer’s shipping address 2.
+
+setSStreet3(String value)
+Saddr3 		Customer’s shipping address 3.
+
+setSCity(String value)
+Scity   	Customer’s shipping city.
+
+setSPostalCode(String value)
+Szip    	Customer’s shipping zip code.
+
+setSStateProv(String value)
+Sstate  	Customer’s shipping state.
+
+setExtra(String value1,String value2)
+		To set extra parameters.
+
+
+
+Get Functions:
+
+
+getOrderId()
+oid		Order ID.
+
+getGroupId()
+groupid		Group ID.
+
+getResponse()
+		Response: Approved, Declined or Error.
+
+getAuthCode()
+code		Authorization Code.
+
+getHostRefNum()
+refno		Reference Number.
+
+getProcReturnCode()
+err		Transaction Error comes from the Bank.
+
+getTransId()
+transid		Transaction ID.
+
+getErrMsg()
+errmsg		Description of the Error.
+
+getExtra(String value1)
+		To get extra parameters.
+
+
+
+Extra parameters:
+
+
+1)	getExtra(“HOSTMSG”)
+	Description message which comes from the authorization center for the Bank.
+
+
+
+
+
+You can find the information to do tests in jpaytest.java folder.
+
+To do prod transactions, you need to change the information at the below.
+
+Instead of "TEST_URL", you need to post "PROD_URL" and change "clientid" , "name" and "password".
+
+
+
+Charge Types:
+
+
+Authorization (PreAuth)
+
+Authorization will be received from the Credit Card and then the limit on merchant's Credit Card for this transaction will be blocked as the amount of payment. Customer will not see the extract of their account for the payment until merchant confirms the authorization.
+
+
+Merchant’s Approval (PostAuth)
+
+It is used for approval on authorized transaction and transfer the money. After a transaction get approved by merchant, it will be shown on merchant's account and extract of customer's account at the end of the day(EOD).
+If the transaction will not get approved by merchant, the limit block on customer's credit card will be removed in 14 days max.
+
+
+Sales (Auth)
+
+Authorization and merchant's approval process gets done at the same time. Sales process will be shown on merchant's account and extract of customer's account at the end of the day.
+
+
+Cancellation of Authorization (Void)
+
+This is for to cancel authorizations which are already approved but it must be done at the same day of the transactions. When authorization is canceled, the limit block on credit card will be removed. Authorization cancel processes will not be seen on extract customer's account.
+Whenever you would like to cancel a transaction which is at least a day passed, you need to wait for approval first then start refund process.
+
+
+Cancellation of Merchant’s Approval (Void)
+
+Cancels the capture process during the day. It will not be seen at the account extracts.
+
+
+Cancellation of Sales (Void)
+
+Cancels the sales which has been approved. It will not be seen at the account extracts.
+
+
+Refund (Credit)
+
+Refunds can be done on orders which has been approved by merchant and on sales.
+Installment sales can not be refunded at the same day with transaction, only after the first day.
+The transactions which has been done with "Moneypoints" can not be refunded online, has to be done with bank's branch offices.

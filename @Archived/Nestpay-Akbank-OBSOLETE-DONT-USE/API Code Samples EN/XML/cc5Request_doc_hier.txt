@@ -1,0 +1,46 @@
+ CC5Request
+|__ Name (String)
+|__ Password (String)
+|__ ClientId (String)
+|__ OrderId (String)
+|__ Type (String)
+|__ Number (String)
+|__ Expires (String)
+|__ Cvv2Val (String)
+|__ Total (String)
+|__ Taksit (String)
+|__ Currency (String)
+|__ UserId (String)
+|__ email (String)
++-- BillTo *
+| |__ Name (String)
+| |__ Street1 (String)
+| |__ Street2 (String)
+| |__ Street3 (String)
+| |__ City (String)
+| |__ PostalCode (String)
+| |__ TelVoice (String)
+|
++-- ShipTo *
+| |__ Name (String)
+| |__ Street1 (String)
+| |__ Street2 (String)
+| |__ Street3 (String)
+| |__ City (String)
+| |__ PostalCode (String)
+| |__ TelVoice (String)
+|
+| +-- OrderItemList
+| +-- OrderItem *
+| |__ ItemNumber (String)
+| |__ ProductCode (String)
+| |__ Qty (String)
+| |__ Desc (String)
+| |__ Id (String)
+| |__ Price (String)
+| |__ Total (String)
+|
++-- Extra *
+| |__ Extra1 (String)
+| |__ Extra2 (String)
+|

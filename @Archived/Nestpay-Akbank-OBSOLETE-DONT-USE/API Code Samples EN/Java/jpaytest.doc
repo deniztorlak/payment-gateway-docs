@@ -1,0 +1,88 @@
+import java.io.*;
+import java.net.*;
+import java.lang.*;
+import java.util.*;
+import java.text.*;
+
+
+
+public class jpaytest {
+
+    public static void main(String[] args) {
+        try{
+
+            jpay myjpay = new jpay();
+
+
+            myjpay.setName("TEST_NAME");
+            myjpay.setPassword("TEST_PASSWORD");
+            myjpay.setClientId("4444");
+
+			myjpay.setIPAddress("");
+            myjpay.setMode("P");
+            myjpay.setOrderId("");
+			myjpay.setGroupId("");
+            myjpay.setTransId("");
+            myjpay.setUserId("");
+            myjpay.setType("PreAuth");
+            myjpay.setNumber("4242424242424242");
+            myjpay.setExpires("04/09");
+            myjpay.setCvv2Val("005");
+            myjpay.setTotal("2.5");
+            myjpay.setCurrency("949");
+
+
+
+            myjpay.setBName("John Doe");
+            myjpay.setBStreet1("Address_1");
+            myjpay.setBStreet2("Address_2");
+            myjpay.setBStreet3("Address_3");
+            myjpay.setBCity("ISTANBUL");
+
+            myjpay.setBStateProv("");
+            myjpay.setBCompany("");
+            myjpay.setBTelVoice("212212212");
+            myjpay.setBTelFax("213213213");
+
+
+		    myjpay.setSName("John Doe");
+            myjpay.setSStreet1("Address_1");
+            myjpay.setSStreet2("Address_2");
+            myjpay.setSStreet3("Address_3");
+            myjpay.setSCity("ISTANBUL");
+
+            myjpay.setSStateProv("");
+            myjpay.setSCompany("");
+            myjpay.setSTelVoice("212212212");
+            myjpay.setSTelFax("213213213");
+
+
+
+                if(myjpay.processTransaction("TEST_URL", 443,"/servlet/cc5ApiServer" ) > 0){
+
+            	System.out.println("OrderId:        		"+myjpay.getOrderId());
+            	System.out.println("GroupId:        		"+myjpay.getGroupId());
+            	System.out.println("AuthCode:       		"+myjpay.getAuthCode());
+				System.out.println("Response:       		"+myjpay.getResponse());
+            	System.out.println("HostRefNum:     		"+myjpay.getHostRefNum());
+            	System.out.println("ProcreturnCode: 		"+myjpay.getProcReturnCode());
+           		System.out.println("TransId:        		"+myjpay.getTransId());
+           		System.out.println("ErrMsg:         		"+myjpay.getErrMsg());
+                System.out.println("HOSTMSG:        		"+myjpay.getExtra("HOSTMSG"));
+
+            }
+            else{
+                System.out.println("processTransaction Error: " );
+			}
+
+		}
+
+		catch(Exception e)
+        {
+            System.out.println("jpaytest Exception" + e);
+
+		}
+
+	}
+
+} //End
