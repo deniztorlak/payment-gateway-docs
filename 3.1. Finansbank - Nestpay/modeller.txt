@@ -1,4 +1,0 @@
-Model	    Akbank logo   Akbank SSL	3D Secure	Ödeme noktasý	
-3D_OOS_PAY    var	      var	Akbank	     3D'li Yeni Ortak Ödeme sayfasý
-3D_PAY	      yok	      var	Akbank	     Ýþyeri kendi SSL'ini kullanýyor, ödeme API'si kullanmadan 3D ve ödeme sonucunu birlikte alýyor.
-3D	      yok	      var	Akbank	     Ýþyeri kendi SSL'ini kullanýyor, ödeme iþlemini API'leri kullanarak kendisi yapýyor.

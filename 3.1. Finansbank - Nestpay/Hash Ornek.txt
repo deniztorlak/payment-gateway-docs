@@ -1,3 +1,0 @@
-ABCDEF   = lwCTZ4sYISf2C7UbivLJTVOeyjo=
-TEST1234 = UcYHssqDY6VL8hOvaikSfu7aQJI= 
-1234     = cRDtpNCeBiql5KOQsKVyrA0sAiA=
