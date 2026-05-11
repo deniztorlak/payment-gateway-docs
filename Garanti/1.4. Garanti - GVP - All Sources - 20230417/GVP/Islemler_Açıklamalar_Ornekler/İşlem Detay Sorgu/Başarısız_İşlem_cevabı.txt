@@ -1,0 +1,36 @@
+<GVPSResponse>
+<Mode></Mode>
+<Terminal>
+<ProvUserID>PROVAUT</ProvUserID>
+<UserID>DENEME</UserID>
+<ID>30691297</ID>
+<MerchantID>7000679</MerchantID></Terminal>
+<Customer>
+<IPAddress>127.0.0.1</IPAddress>
+<EmailAddress>eticaret@garanti.com.tr</EmailAddress></Customer>
+<Order>
+<OrderID>GARANTI_TEST_003</OrderID>
+<GroupID></GroupID>
+<OrderHistInqResult>
+<OrderTxnList></OrderTxnList></OrderHistInqResult></Order>
+<Transaction>
+<Response>
+<Source>GVPS</Source>
+<Code>92</Code>
+<ReasonCode>0108</ReasonCode>
+<Message>Declined</Message>
+<ErrorMsg>Gönderilen sipariþ numarasýna ait kayýt bulunmamaktadýr</ErrorMsg>
+<SysErrMsg>ErrorId: 0108</SysErrMsg></Response>
+<RetrefNum></RetrefNum>
+<AuthCode></AuthCode>
+<BatchNum></BatchNum>
+<SequenceNum></SequenceNum>
+<ProvDate>20170324 15:00:00</ProvDate>
+<CardNumberMasked></CardNumberMasked>
+<CardHolderName></CardHolderName>
+<CardType></CardType>
+<HashData>1EC6060287F1CA35B815A7F11EB20CF147C1E47C</HashData>
+<HostMsgList></HostMsgList>
+<RewardInqResult>
+<RewardList></RewardList>
+<ChequeList></ChequeList></RewardInqResult></Transaction></GVPSResponse>

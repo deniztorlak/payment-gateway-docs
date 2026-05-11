@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GVPSResponse>
+  <Mode></Mode>
+  <Terminal>
+    <ProvUserID>PROVAUT</ProvUserID>
+    <UserID>DENEME</UserID>
+    <ID>30691297</ID>
+    <MerchantID>7000679</MerchantID>
+  </Terminal>
+  <Customer>
+    <IPAddress>127.0.0.1</IPAddress>
+    <EmailAddress>eticaret@garanti.com.tr</EmailAddress>
+  </Customer>
+  <Order>
+    <OrderID>GARANTI_TEST_017</OrderID>
+    <GroupID></GroupID>
+  </Order>
+  <Transaction>
+    <Response>
+      <Source>HOST</Source>
+      <Code>00</Code>
+      <ReasonCode>00</ReasonCode>
+      <Message>Approved</Message>
+      <ErrorMsg></ErrorMsg>
+      <SysErrMsg></SysErrMsg>
+    </Response>
+    <RetrefNum>708610669172</RetrefNum>
+    <AuthCode>740019</AuthCode>
+    <BatchNum>001684</BatchNum>
+    <SequenceNum>027468</SequenceNum>
+    <ProvDate>20170327 10:40:01</ProvDate>
+    <CardNumberMasked>428220******2016</CardNumberMasked>
+    <CardHolderName>A** 0116****** SOY*** 0116******</CardHolderName>
+    <CardType>FLEXI</CardType>
+    <HashData>54B5D600A779917E98F52A4E4B747936803FB64F</HashData>
+    <HostMsgList></HostMsgList>
+    <RewardInqResult>
+      <RewardList></RewardList>
+      <ChequeList></ChequeList>
+    </RewardInqResult>
+  </Transaction>
+</GVPSResponse>

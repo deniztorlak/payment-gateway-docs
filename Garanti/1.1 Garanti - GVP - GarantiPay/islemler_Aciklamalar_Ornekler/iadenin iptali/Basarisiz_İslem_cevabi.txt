@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-16"?>
+<GVPSResponse>
+  <Mode></Mode>
+  <Terminal>
+    <ProvUserID>PROVRFN</ProvUserID>
+    <UserID>DENEME</UserID>
+    <ID>30691297</ID>
+    <MerchantID>7000679</MerchantID>
+  </Terminal>
+  <Customer>
+    <IPAddress>127.0.0.1</IPAddress>
+    <EmailAddress>eticaret@garanti.com.tr</EmailAddress>
+  </Customer>
+  <Order>
+    <OrderID>GARANTI_TEST_001</OrderID>
+    <GroupID></GroupID>
+  </Order>
+  <Transaction>
+    <Response>
+      <Source>GVPS</Source>
+      <Code>92</Code>
+      <ReasonCode>0207</ReasonCode>
+      <Message>Declined</Message>
+      <ErrorMsg>Ýlk önce, en son yapýlan iþlemi iptal etmelisiniz</ErrorMsg>
+      <SysErrMsg>ErrorId: 0207</SysErrMsg>
+    </Response>
+    <RetrefNum>708313662016</RetrefNum>
+    <AuthCode></AuthCode>
+    <BatchNum>001684</BatchNum>
+    <SequenceNum>026052</SequenceNum>
+    <ProvDate>20170324 14:33:08</ProvDate>
+    <CardNumberMasked>428220******2016</CardNumberMasked>
+    <CardHolderName></CardHolderName>
+    <CardType></CardType>
+    <HashData>6FC6D1EDA8BB5472DA361FC47999A0F3911A8379</HashData>
+    <HostMsgList></HostMsgList>
+    <RewardInqResult>
+      <RewardList></RewardList>
+      <ChequeList></ChequeList>
+    </RewardInqResult>
+  </Transaction>
+</GVPSResponse>

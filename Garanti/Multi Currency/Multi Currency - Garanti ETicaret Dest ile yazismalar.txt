@@ -1,0 +1,41 @@
+Hashdata alanının hesaplanmasın da kur değerinin hesaplama içerisine eklenmesi gerekecek.
+
+XML için;
+<Version>512</Version> //Sha512 hash hesaplama çalışması kapsamında bu alanda 512 bilgisi gelmelidir.
+
+- Order/OrderID
+- Terminal/ID
+- Card/Number
+- Transaction/Amount
+- Transaction/CurrencyCode
+- Hashed password
+ 
+SecurityData  sha1 ile hesaplanmaya devam edilecektir. 
+
+***Bu aşamada kullanılacak hashleme metodu SHA512 şeklindedir. HashData sha512 ile hesaplanmalıdır.
+
+HashData = Order/OrderID  + Terminal/ID + Card/Number + Transaction/Amount + Transaction/CurrencyCode + SecurityData 
+
+HTML Post için;
+*** İstek içerisinde yer alan “apiversion” alanında “512” ifadesinin gönderilmesi gerekmektedir.  Bu alan zorunludur.
+HashData = terminalId + orderid + amount + currency + okurl + failurl + islemtipi + taksit + storekey + SecurityData
+
+Yukarıdaki formülle elde edilen HashData değeri SHA512 algoritmasıyla hashlenip  , çıkan sonuç büyük harfe çevrilerek "secure3dhash" alanına konulur. SecurityData değeri sha1 ile hesaplanmaya devam edilecektir.
+
+ 
+XML ve HTML post cevap mesajlarının hesaplanmasında da SHA512 üzerinden hesaplama yapılacaktır . Hesaplanan data içerisinde bir değişiklik bulunmuyor.  Sadece hashleme SHA512 ile yapılıyor.
+
+3D model dönüş sonrasında 3DModelResult satış xml dosyanızda hash alttaki gibi hesaplanmalidir. (Sales Request)
+XML512 =OrderID  + Terminal +  Amount + CurrencyCode + SecurityData (Sdata sha1 hesap)
+
+=======
+
+Yurtici kart ile yabanci doviz islemi yapinca alinan mesaj
+<ReasonCode> 0759 - 13 – 58 mesajlar geliyor.  ErrorMsg alanında gelen mesajı yazdırabilirsiniz.  Alanda “Yurtici kartlar YP islem yapamaz” vb.
+
+Tüm işlemleri yurt içi ve dışı sha512 üzerinden işlem yapılmalıdır. 
+
+Yurt için sanal poslar ile Yurtiçi kartlar, AMEX kartlar ve YDCKK ( Çin kartları ) ile sadece TL para birimi ile işlem gönderilebilir. Sanal pos Multi Currency tanımı ile TL işlemlerinde 949, USD işlemlerinde 840, EURO işlemlerinde 978, GBP işlemlerinde 826, JPY işlemlerinde 392, RUB işlemlerinde 810  currency kodu göndererek işlem yapılabilir.  Yurtdışı kartlar ile istenilen para birimi ile işlem gönderilebilir..
+
+
+Ekte BIN sorgu yapısı ile yurt içi BIN sorgu yapabilirsiniz ve tamamını 949 yönlendirmelisiniz. Ekte yurt içi BIN listemizde bulunuyor.
